@@ -3,6 +3,8 @@
 		<div class="col-md-4">
 			<h4>{{item.name}}</h4>
 			<p>Rating: {{item.rating}}<span ng-if="item.rating > 4.0" ng-class="{highlight: item.rating > 4.5}"> - People love this item!</span></p>
+			<button ng-click="menu.increment(item)">+</button>
+			<button ng-click="menu.decrement(item)">-</button>
 			<p>Calories: {{item.calories}}</p>
 			<img class="item__image" ng-src="images/{{item.img}}" alt="{{item.name}}" width="300" height="400">
 			<p class="review-box">
