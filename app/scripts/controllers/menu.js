@@ -13,21 +13,21 @@ angular.module('udaciMealsApp')
   	{
   	id : 'chicken-pomegranate-salad',
   	name : 'Chicken Pomegranate Salad',
-  	img : 'chicken-pomegranate-salad.jpeg',
+  	img : 'chicken-pomegranate-salad.jpg',
   	calories: 430,
   	rating : 4.1
   	},
   	{
   	id : 'strawberry-pudding',
   	name : 'Strawberry Pudding',
-  	img : 'Strawberry-Pudding.jpeg',
+  	img : 'Strawberry-Pudding.jpg',
   	calories: 280,
   	rating : 5
   	},
   	{
   	id : 'ham-goat-cheese-croissant',
   	name : 'Ham Goat Cheese Croissant',
-  	img : 'ham-goat-cheese-croissant.jpeg',
+  	img : 'ham-goat-cheese-croissant.jpg',
   	calories: 670,
   	rating : 3.9
   	}

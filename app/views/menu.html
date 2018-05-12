@@ -4,13 +4,13 @@
 			<h4>{{item.name}}</h4>
 			<p>Rating: {{item.rating}}<span ng-if="item.rating > 4.0" ng-class="{highlight: item.rating > 4.5}"> - People love this item!</span></p>
 			<p>Calories: {{item.calories}}</p>
-			<p>Image: {{item.img}}</p>
-			<p>
+			<img class="item__image" ng-src="images/{{item.img}}" alt="{{item.name}}" width="300" height="400">
+			<p class="review-box">
 				<textarea ng-model="item.newReview" name="item.review" rows="3" cols="40"></textarea>				
 			</p>
 			<p>
 				{{item.newReview}}
-				<span ng-if="!item.newReview">Why not write a review!</span>
+				<span ng-if="!item.newReview">Why not write a review?</span>
 			</p>
 		</div>
 	</div>
