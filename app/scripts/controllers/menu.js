@@ -8,7 +8,16 @@
  * Controller of the udaciMealsApp
  */
 angular.module('udaciMealsApp')
-	.controller('MenuCtrl', function () {
+	.controller('MenuCtrl', ['orderManager', function (menu, orderManager) {
+
+	this.chooseItem = function(menuCategory, menuItemName){
+	};
+	this.increment = function(item){
+	item.rating = ((item.rating * 10) + 1) / 10;
+	};
+	this.decrement = function(item){
+	item.rating = ((item.rating * 10) - 1) / 10;
+	};
 	this.items = [
 	{
 		id : 'chicken-pomegranate-salad',
@@ -32,11 +41,6 @@ angular.module('udaciMealsApp')
 		rating : 3.9
 	}
 	];
-	this.increment = function(item){
-	item.rating = ((item.rating * 10) + 1) / 10;
-	};
-	this.decrement = function(item){
-	item.rating = ((item.rating * 10) - 1) / 10;
-	};
-	});
+
+	}]);
 
